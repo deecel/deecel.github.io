@@ -1,0 +1,160 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px 0;
+    z-index: 1000;
+}
+
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+#navbar li {
+    padding: 0 15px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+/* Welcome Section */
+#welcome-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+#welcome-section h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+#welcome-section p {
+    font-size: 1.5em;
+}
+
+/* Projects Section */
+#projects {
+    padding: 50px 20px;
+    background-color: #e4e4e4;
+    text-align: center;
+}
+
+#projects h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.project-tile {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project-tile h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.project-tile p {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.project-tile a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project-tile a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Section */
+#contact {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 1.5em;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+footer a {
+    color: #f0f0f0;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries for smaller screens */
+@media (max-width: 768px) {
+    #navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #welcome-section h1 {
+        font-size: 2.5em;
+    }
+
+    #welcome-section p {
+        font-size: 1.2em;
+    }
+
+    .project-tile {
+        margin: 10px 0;
+    }
+
+    .project-tile h3 {
+        font-size: 1.5em;
+    }
+
+    .project-tile p {
+        font-size: 1em;
+    }
+}
